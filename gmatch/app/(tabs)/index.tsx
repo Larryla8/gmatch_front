@@ -35,7 +35,7 @@ export default function HomeScreen({ navigation }) {
       }
     >
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Welcome to GMatch! </ThemedText>
+        <ThemedText type="title">Welcome to GMatch2! </ThemedText>
         <HelloWave />
       </ThemedView>
 
