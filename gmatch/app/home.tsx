@@ -5,7 +5,7 @@ import { Link } from "expo-router";
 import { Text, View, StyleSheet } from "react-native";
 import { ThemedView } from "@/components/ThemedView";
 import { ThemedText } from "@/components/ThemedText";
-import { red } from "react-native-reanimated/lib/typescript/reanimated2/Colors";
+//import { red } from "react-native-reanimated/lib/typescript/reanimated2/Colors";
 
 export default function Home() {
   console.log("---in home 1---");
@@ -50,7 +50,13 @@ export default function Home() {
           </Text>
         </View>
       </ThemedView>
-
+      <ThemedView>
+        <View>
+          <Text style={styles.signUpLink}>
+            <Link href="/signin2">ユーザ登録2</Link>
+          </Text>
+        </View>
+      </ThemedView>
       <ThemedView>
         <View>
           <Text style={styles.signUpLink}>
