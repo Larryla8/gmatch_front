@@ -96,6 +96,14 @@ export default function Home() {
           </Text>
         </View>
       </ThemedView>
+
+      <ThemedView>
+        <View>
+          <Text style={styles.signUpLink}>
+            <Link href="/call_API">API テスト</Link>
+          </Text>
+        </View>
+      </ThemedView>
     </ParallaxScrollView>
   );
 }

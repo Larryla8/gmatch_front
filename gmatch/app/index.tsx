@@ -8,7 +8,7 @@ interface componentNameProps {}
 const Index = (props: componentNameProps) => {
   return (
     <View style={styles.container}>
-      <Text>Ihis is Index Page</Text>
+      <Text>This is Index Page</Text>
       {/* redirect to sign in screen */}
       <Redirect href="/home" />
     </View>
