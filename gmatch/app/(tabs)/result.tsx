@@ -27,6 +27,7 @@ const ResultPage = () => {
   const apiKey = "DtEH-3_SR44HXsbEO875r6WrGsPZvl3P7lb2Idh1ioy1AzFuEDnvkA==";
   const apiUrl = "https://gmreguserfa.azurewebsites.net/api/func_get_result";
   const orgid_user = "orgid_user";
+  const data_type = "position"; // data_typeを追加
 
   const fetchResults = useCallback(async () => {
     try {
@@ -37,6 +38,7 @@ const ResultPage = () => {
         },
         params: {
           orgid_username: orgid_user,
+          data_type: data_type, // data_typeをAPIに渡す
         },
         timeout: 10000,
       });
@@ -231,20 +233,6 @@ const styles = StyleSheet.create({
     padding: 10,
     elevation: 2,
     marginTop: 10,
-  },
-  salaryInputContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginVertical: 10,
-  },
-  salaryInput: {
-    height: 40,
-    borderWidth: 1,
-    padding: 10,
-    width: '35%',
-  },
-  salarySeparator: {
-    marginHorizontal: 10,
   },
 });
 
